@@ -37,14 +37,16 @@
                         <plugin>
                                 <groupId>org.apache.tomcat.maven</groupId>
                                 <artifactId>tomcat8-maven-plugin</artifactId>
-                                <version>2.2</version>
-                                <configuration>
+                                <version>3.1</version>                                    
+                          <configuration>
+                             <source>11.0.16</source>
+                             <target>11.0.16</target>
                                 <path>/${project.artifactId}##${project.version}</path>
                                 <url>http://10.17.1.87:8080/manager/text</url>
                                         <username>admin</username>
                                         <password>*******</password>
                                         <update>true</update>
-                                </configuration>
+                            </configuration>
                         </plugin>
                 </plugins>
 
