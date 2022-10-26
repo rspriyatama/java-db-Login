@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('fetch the code') {
             steps {
-                git credentialsId: 'github-cred', url: 'https://github.com/mailrahulsre/java-db-Login.git'
+                git credentialsId: 'github-cred', url: 'https://github.com/rspriyatama/java-db-Login.git'
             }
         }
         stage('Build the code') {
